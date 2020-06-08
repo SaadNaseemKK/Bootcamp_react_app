@@ -35,5 +35,5 @@ jobs:
       run: yarn build
       
     - name : deploying on surge
-      run : surge ./build http://saad_reactapp.surge.sh/ ${{.secrets/SURGE_TOKEN}}
+      run : surge ./build http://saad_reactapp.surge.sh/ --token ${{.secrets/SURGE_TOKEN}}
    
